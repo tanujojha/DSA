@@ -1,0 +1,4 @@
+ARRAY:
+
+1. Largest subArray in aN array of numbers
+2. Largest pallandrome in a string
