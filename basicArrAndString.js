@@ -183,14 +183,14 @@
 // console.log(numbers);
 
 // 4. 
-function reverseArray(array) {
-    // Loop through half of the array
-    for (let i = 0; i < Math.floor(array.length / 2); i++) {
-        // Swap elements using destructuring assignment
-        [array[i], array[array.length - 1 - i]] = [array[array.length - 1 - i], array[i]];
-    }
-    return array;
-}
+// function reverseArray(array) {
+//     // Loop through half of the array
+//     for (let i = 0; i < Math.floor(array.length / 2); i++) {
+//         // Swap elements using destructuring assignment
+//         [array[i], array[array.length - 1 - i]] = [array[array.length - 1 - i], array[i]];
+//     }
+//     return array;
+// }
 
 // // Example usage
 // const numbers = [1, 2, 3, 4, 5];
@@ -266,3 +266,78 @@ function reverseArray(array) {
 // const x = findMinssing([1,2,3,4], [1,3,4,5]);
 
 // console.log(x);
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Bubble Sort
+
+// const arr = [4,1,2,5,3]
+
+// function bubbleSort(arr) {
+
+//     for (var i = 0; i < arr.length; i++) {
+
+//         // Last i elements are already in place  
+//         for (var j = 0; j < (arr.length - i - 1); j++) {
+
+//             // console.log(j);
+            
+
+//             // Checking if the item at present iteration 
+//             // is greater than the next iteration
+//             if (arr[j] > arr[j + 1]) {
+
+//                 // If the condition is true
+//                 // then swap them
+//                 var temp = arr[j]
+//                 arr[j] = arr[j + 1]
+//                 arr[j + 1] = temp
+//             }
+
+//             // console.log(arr);
+            
+//         }
+
+//         console.log(arr);
+        
+//     }
+
+//     // Print the sorted array
+//     // console.log(arr);
+// }
+
+// const sortedArr = bubbleSort(arr)
+
+// Optimized way
+
+// function bubbleSort(array) {
+//     const arrayLength = array.length;
+//     let isSwapped;
+
+//     for (let i = 0; i < arrayLength; i++) {
+//         isSwapped = false;
+
+//         for (let j = 0; j < arrayLength - i - 1; j++) {
+//             if (array[j] > array[j + 1]) {
+//                 // Swap elements
+//                 [array[j], array[j + 1]] = [array[j + 1], array[j]];
+//                 isSwapped = true;
+//             }
+//         }
+
+//         // If no two elements were swapped in the inner loop, array is sorted
+//         if (!isSwapped) 
+//             break;
+//     }
+
+//     return array;
+// }
+
+// // Test the function
+// const sortedArray = bubbleSort([45, 23, 3, 5346, 5, 356, 243, 35]);
+// console.log("Sorted Array:");
+// console.log(sortedArray);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
